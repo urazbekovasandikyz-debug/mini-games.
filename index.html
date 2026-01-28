@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Mini Games & Schedule</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Ввод ника -->
+<div id="nicknameScreen">
+  <h1>Введите свой ник</h1>
+  <input type="text" id="nicknameInput" placeholder="Ваш ник">
+  <button id="startBtn">Продолжить</button>
+</div>
+
+<!-- Главное меню -->
+<div id="menu">
+  <h1 id="welcomeText"></h1>
+  <div id="scoreDisplay">Очки: 0</div>
+  <button id="rpsBtn">Камень 🪨, Ножницы ✂️, Бумага 🧻</button>
+  <button id="ticBtn">Крестики-нолики</button>
+  <button id="avatarBtn">Аватарки</button>
+  <button id="scheduleBtn">Кесте 📅</button>
+  <button id="aboutBtn">О нас</button>
+  <button id="rulesBtn">Правила</button>
+</div>
+
+<!-- Камень-Ножницы-Бумага -->
+<div id="rpsGame">
+  <h2>Камень 🪨, Ножницы ✂️, Бумага 🧻</h2>
+  <div>
+    <button class="rpsChoice">🪨</button>
+    <button class="rpsChoice">✂️</button>
+    <button class="rpsChoice">🧻</button>
+  </div>
+  <div id="rpsAnim">🤖</div>
+  <div id="rpsResult"></div>
+  <button class="backMenu">Главная</button>
+</div>
+
+<!-- Крестики-нолики -->
+<div id="ticGame">
+  <h2>Крестики-нолики</h2>
+  <div id="ticBoard"></div>
+  <div id="ticResult"></div>
+  <button class="backMenu">Главная</button>
+</div>
+
+<!-- Аватарки -->
+<div id="avatarScreen">
+  <h2>Ваши аватарки</h2>
+  <div id="avatarsContainer"></div>
+  <button class="backMenu">Главная</button>
+</div>
+
+<!-- Модальное расписание -->
+<div id="scheduleModal" class="modal">
+  <div class="modal-content">
+    <h2>Расписание уроков</h2>
+    <div id="daysButtons"></div>
+    <div id="dayContent"></div>
+    <button id="closeScheduleBtn">Главная</button>
+  </div>
+</div>
+
+<!-- Модальные окна -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <h2>О нас</h2>
+    <p>Мини-игры против бота с очками и анимированными аватарками.</p>
+    <p>Разработчик: Temirtasov</p>
+    <button class="closeModal">Закрыть</button>
+  </div>
+</div>
+
+<div id="rulesModal" class="modal">
+  <div class="modal-content">
+    <h2>Правила</h2>
+    <p>Побеждай бота в играх, зарабатывай очки и открывай анимированные аватарки!</p>
+    <button class="closeModal">Закрыть</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
